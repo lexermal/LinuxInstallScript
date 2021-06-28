@@ -9,7 +9,7 @@ apt-get upgrade -y
 apt-get remove dragonplayer cheese rhythmbox firefox -y -m
 #
 echo "______________________Install software______________________"
-apt-get install virtualbox gimp vlc clamav bleachbit nmap traceroute dia compizconfig-settings-manager gnome-tweak-tool flameshot libreoffice  apt-transport-https curl git -y
+apt-get install virtualbox gimp vlc clamav bleachbit nmap traceroute dia chromium filezilla obs-studio rpi-imager compizconfig-settings-manager gnome-tweak-tool flameshot libreoffice  apt-transport-https curl git -y
 
 add-apt-repository ppa:linuxuprising/shutter -y
 apt-get install shutter -y
@@ -24,6 +24,7 @@ snap install teams-for-linux
 snap install chromium
 snap install keepassxc 
 snap install telegram-desktop
+snap install drawio
 
 # Check if it can be installed again
 # sudo apt-add-repository ppa:qos/pulseaudio-dlna
