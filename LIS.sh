@@ -9,7 +9,7 @@ apt-get upgrade -y
 apt-get remove dragonplayer cheese rhythmbox firefox -y -m
 #
 echo "______________________Install software______________________"
-apt-get install virtualbox gimp vlc clamav bleachbit nmap traceroute dia chromium filezilla obs-studio rpi-imager compizconfig-settings-manager gnome-tweak-tool flameshot libreoffice  apt-transport-https curl git -y
+apt-get install virtualbox gimp vlc clamav bleachbit nmap traceroute dia filezilla obs-studio compizconfig-settings-manager gnome-tweak-tool flameshot libreoffice  apt-transport-https curl git -y
 
 add-apt-repository ppa:linuxuprising/shutter -y
 apt-get install shutter -y
@@ -25,17 +25,12 @@ snap install chromium
 snap install keepassxc 
 snap install telegram-desktop
 snap install drawio
+snap install brave 
+snap install rpi-imager
 
-# Check if it can be installed again
-# sudo apt-add-repository ppa:qos/pulseaudio-dlna
-# sudo apt-get update
-# sudo apt-get install pulseaudio-dlna
 
-echo "______________________Install Brave______________________"
-curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
-echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
-apt update
-apt install brave-browser -y
+apt-add-repository ppa:qos/pulseaudio-dlna
+apt-get install pulseaudio-dlna
 
 
 echo "______________________Install yarn______________________"
