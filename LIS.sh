@@ -29,8 +29,8 @@ snap install brave
 snap install rpi-imager
 
 
-apt-add-repository ppa:qos/pulseaudio-dlna
-apt-get install pulseaudio-dlna
+apt-add-repository ppa:qos/pulseaudio-dlna -y
+apt-get install pulseaudio-dlna -y
 
 
 echo "______________________Install yarn______________________"
