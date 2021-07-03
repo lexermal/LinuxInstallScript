@@ -25,12 +25,22 @@ snap install chromium
 snap install keepassxc 
 snap install telegram-desktop
 snap install drawio
-snap install brave 
 snap install rpi-imager
 
 
 apt-add-repository ppa:qos/pulseaudio-dlna -y
 apt-get install pulseaudio-dlna -y
+
+
+echo "______________________Install Brave_____________________" # important for keepassxc connection
+curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+
+apt update
+apt install brave-browser -y
+
+
 
 
 echo "______________________Install yarn______________________"
