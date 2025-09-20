@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Version 2.3
-# 2023-08-02
+# Version 2.4
+# 2025-09-20
 #
 apt-get update
 apt-get dist-upgrade -y
@@ -16,6 +16,8 @@ snap install mailspring
 snap install chromium
 snap install telegram-desktop
 snap install wps-office
+snap install spotify
+snap install slack
 
 
 echo "______________________Finished______________________"
